@@ -322,11 +322,51 @@ Resta
 \item $1-1=0$ 
 
 \end{itemize}
+
+La resta es un poco curiosa, me di cuenta que cuando se resta un 0-1 da 1 y si el siguiente bit del minuendo es 1 este queda en cero y si es cero este queda en 1. 
+
 \end{multicols}   
    
   \section{Complemento de un número}
   
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{figures/complemento.png}
+  \caption{complemento}
+  \label{complemento}
+  \end{figure}
+  \vspace{0.2cm}
+
+
+\begin{itemize}
+\item Complemento a 9 de \textit{a} es x tal que \textit{a+x} tenga la cantidad la cantidad de 9 igual al número de dígitos que tiene \textit{a}
+\item Complemento a 10 de \textit{a} significa encontrar el un número tal que \textit{a}+x se un múltiplo de 10 con el numero de dígitos igual al de \textit{a+1} 
+Realizando la analogía entonces:
+\item Complemento a 1 de \textit{a} es x tal que $a+x$ tenga la cantidad de 1 como de bits que tiene a.
+\item Complemento a 2 de \textit{a} es x tal que $a+x$ tenga en el último bit el 2 (10) y el resto tenga 0. En otras palabras el el complemento a 1 mas 1.
+\end{itemize}  
+  
    \section{Ejercicios}
+   
+
+  Un ejemplo se da en la Figura \ref{complemento2} 
+  
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{figures/complemento2.png}
+  \caption{complemento2}
+  \label{complemento2}
+  \end{figure}
+  \vspace{0.2cm}
+   
+Tener en cuenta para la resta:
+
+\begin{itemize}
+\item Solo se toman la cantidad de bits del número más grande
+\item Cuando se resta por complemento a 2 y se obtiene un resultado sin desborde, es un resultado de resta negativa.
+\end{itemize} 
+ 
+   
    \section{Resumen}
 
 \chapter{Semana 3}
@@ -393,12 +433,24 @@ En la Figura \ref{ejeSum3} muestra las compuertas lógicas NOT, AND, OR, XOR.
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\linewidth]{figures/ejeSum3.png}
-\caption{Algunas compuertas lógicas}
+\caption{Algunas compuertas lógicas \cite{Beltran}}
 \label{ejeSum3}
 \end{figure}
 \vspace{0.2cm}
 \end{multicols}
 \end{example}
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{figures/sum2bits.png}
+\caption{Algunas compuertas lógicas \cite{Beltran}}
+\label{sum2bits}
+\end{figure}
+\vspace{0.2cm}
+
+
 
 \section{Álgebra de Boole Postulados}
 
@@ -412,12 +464,96 @@ En la Figura \ref{proBoo} se muestran los postulados de Boole.
 \end{figure}
 \vspace{0.2cm}
 
+Ejemplo
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{figures/boole2.png}
+\caption{boole2 \cite{Beltran}}
+\label{}
+\end{figure}
+\vspace{0.2cm}
+
+\subsection{Propiedades}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{figures/pro1.png}
+\caption{ \cite{Beltran} }
+\label{pro1}
+\end{figure}
+\vspace{0.2cm}
+
+\subsection{Funciones Booleanas Tablas de verdad}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{figures/tabBoo1.png}
+\caption{}
+\label{tabBoo1}
+\end{figure}
+\vspace{0.2cm}
+
+Ejemplo:
+Note que para escoger los MINTERM, se eligen los casos en donde la variable dependiente de interés es 1.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.5\linewidth]{figures/tabBoo2.png}
+\caption{}
+\label{tabBoo2}
+\end{figure}
+\vspace{0.2cm}
+
+Para el caso del sumador de tiene que a partir de su tabla de verdad:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{figures/tabBoo3.png}
+\caption{}
+\label{tabBoo3}
+\end{figure}
+\vspace{0.2cm}
+
+La función booleana a partir de la suma de sus MinTerm.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.5\linewidth]{figures/tabBoo4.png}
+\caption{}
+\label{tabBoo4}
+\end{figure}
+\vspace{0.2cm}
+
+Finalmente se implementan las compuertas lógicas necesarias
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.5\linewidth]{figures/tabBoo5.png}
+\caption{}
+\label{tabBoo5}
+\end{figure}
+\vspace{0.2cm}
+
+Ejercicio: Halle las funciones Booleanas a partir de los minTerm de las salidas para el 7 segmentos:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.5\linewidth]{figures/tabBoo6.png}
+\caption{}
+\label{tabBoo6}
+\end{figure}
+\vspace{0.2cm}
+
+
+
+
 \chapter{Semana 4}
 La Figura \ref{p1} representa algunos símbolos con sus compuertas lógicas equivalentes. Lo que quiere decir cuando si z=a si c=1, es que deja para pasar la señal de entrada. Por otra parte, Z=HI(Hight Impedance) si c=0 es equivalente a decir que la señal no pasa. En pocas palabras, es un interruptor programable.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\linewidth]{figures/p1.png}
+\includegraphics[width=.5\linewidth]{figures/p1.png}
 \caption{Compuestas lógicas equivalentes}
 \label{p1}
 \end{figure}
@@ -429,7 +565,7 @@ La Figura \ref{p1} representa algunos símbolos con sus compuertas lógicas equi
 
 \begin{multicols}{2}
 
-En la Figura \ref{p2} se muestra el planteamiento para realizar el diseño del comparador de una cadena de bits a partir de un comparador de un bit. Si X>Y se le asigna el valor de 1 a  G, en caso contrario se le asigna 1 a L, si ninguna se cumple, E=1 lo que significa que son iguales. 
+En la Figura \ref{p2} se muestra el planteamiento para realizar el diseño del comparador de una cadena de bits a partir de un comparador de un bit. Si X $>$ Y se le asigna el valor de 1 a  G, en caso contrario se le asigna 1 a L, si ninguna se cumple, E=1 lo que significa que son iguales. 
 
 
 \begin{figure}[H]
@@ -450,7 +586,7 @@ La lógica para programar es que se va a comenzar a comparar la cadena de bits d
 \end{figure}
 \vspace{0.2cm}
 
-La Figura \ref{p4}  muestra  una tabla con los valores con todos los posibles valores que se pueden obtener según las cuatro entradas. Se tienen cuatro entradas, porque se está pensando en un proceso en el cual, se vuelva a utilizar reiterativamente un bloque. La \textbf{x} en la tabla significa que los valores que tome no son relevantes.
+La Figura \ref{p4}  muestra  una tabla con los valores con todos los posibles valores que se pueden obtener según las cuatro entradas. Se tienen cuatro entradas, porque se está pensando en un proceso en el cual, se vuelva a utilizar reiterativamente un bloque. La \textbf{x} en la tabla significa que los valores que tome no son relevantes (Adquiere valores de 1 o 0).
 
 \begin{figure}[H]
 \centering
@@ -494,6 +630,13 @@ $Gi=\overline{L_{i+1}}\cdot x \cdot \overline{y} + G_{i+1}$\footnote{el i+1 sign
 Para el caso de encontrar una función booleana, se procede de manera similar y se obtiene:\\
 
 $L_i=G_{i+1} \cdot \overline{x} \cdot y+L_{i+1}$
+
+
+\textcolor{red}{Duda} \\
+
+\textcolor{blue}{
+El docente no tuvo en cuenta la salida en la cual se presentaban los casos (x) en primera instancia,luego para simplificar ecuaciones, tomó un resultado conveniente de las filas 6 y 7. Un compañero fue a tomar un resultado particular en el caso donde la variable dependiente era \textit{x} y el docente dijo que en esos casos se debían evaluar todos los resultados.  
+}
 
 \end{multicols}
 
@@ -619,7 +762,60 @@ $l4=\textcolor{blue}{\overline{G_i} \cdot \overline{ X_i} \cdot \overline{X_0} \
 En resumen se tiene que:\\
 $\textcolor{blue}{L_0=L_i+\overline{G_i} \cdot \overline{X_i} \cdot Y_i+\overline{G_i} \cdot X_i \cdot \overline{X_0} \cdot Y_i \cdot Y_o }+\textcolor{blue}{\overline{G_i} \cdot \overline{ X_i} \cdot \overline{X_0} \cdot \overline{Y_i}  \cdot Y_o}$
 
+Resultado final
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{figures/karnaugh.png}
+\caption{}
+\label{karnaugh}
+\end{figure}
+\vspace{0.2cm}
+
 \end{multicols}
+
+\textbf{Resumen}: Lo importante de los mapas es armarlos de tal manera que en las simetrías se encuentren al menos dos valores negados, que se pueden factorizar, dando como resultado 1 ($\overline{a}+a=1 $ ) 
+
+\section{Tiempos de Propagación}
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{figures/tiePro.png}
+\caption{}
+\label{tiePro}
+\end{figure}
+\vspace{0.2cm}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{figures/tiePro2.png}
+\caption{}
+\label{tiePro2}
+\end{figure}
+\vspace{0.2cm}
+
+Ambos tienen el mismo tiempo de propación, el comparador de dos bits necesita menos componentes para comparar n bits. \\
+Comparador de 64 bits:\\
+\begin{itemize}
+\item Comparador 1 bit: 256 componentes más un or, total 257. 
+\item Comparador 2 bit: 214 componentes más un or, total 215.
+
+\textcolor{red}{¿Por qué? Clase del 2020-03-25}
+
+
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{figures/tiePro3.png}
+\caption{}
+\label{tiePro3}
+\end{figure}
+\vspace{0.2cm}
+
 
 \chapter{Investigaciones}
 

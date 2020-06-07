@@ -18,12 +18,15 @@
 \BOOKMARK [1][-]{section.3.1}{Introducci\363n a la l\363gica combinacional}{chapter.3}% 18
 \BOOKMARK [2][-]{subsection.3.1.1}{Tipo de circuitos digitales}{section.3.1}% 19
 \BOOKMARK [1][-]{section.3.2}{\301lgebra de Boole Postulados}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{Semana 4}{}% 21
-\BOOKMARK [1][-]{section.4.1}{Comparador de un bit}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.2}{Mapas de Karnaugh}{chapter.4}% 23
-\BOOKMARK [0][-]{chapter.5}{Investigaciones}{}% 24
-\BOOKMARK [0][-]{chapter.6}{Programaci\363n}{}% 25
-\BOOKMARK [1][-]{section.6.1}{Retraso}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.2}{L\363gica secuencial}{chapter.6}% 27
-\BOOKMARK [2][-]{subsection.6.2.1}{registros}{section.6.2}% 28
-\BOOKMARK [0][-]{chapter.7}{Videos complementarios}{}% 29
+\BOOKMARK [2][-]{subsection.3.2.1}{Propiedades}{section.3.2}% 21
+\BOOKMARK [2][-]{subsection.3.2.2}{Funciones Booleanas Tablas de verdad}{section.3.2}% 22
+\BOOKMARK [0][-]{chapter.4}{Semana 4}{}% 23
+\BOOKMARK [1][-]{section.4.1}{Comparador de un bit}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.2}{Mapas de Karnaugh}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.3}{Tiempos de Propagaci\363n}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{Investigaciones}{}% 27
+\BOOKMARK [0][-]{chapter.6}{Programaci\363n}{}% 28
+\BOOKMARK [1][-]{section.6.1}{Retraso}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.2}{L\363gica secuencial}{chapter.6}% 30
+\BOOKMARK [2][-]{subsection.6.2.1}{registros}{section.6.2}% 31
+\BOOKMARK [0][-]{chapter.7}{Videos complementarios}{}% 32
