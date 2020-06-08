@@ -507,9 +507,14 @@ P: \text{Magnetización} \\
 \end{figure}
 \vspace{0.2cm}
 
+
 \begin{align*}
 \epsilon _m \text{: Capacidad de producir flujo por unidad de area al aplicar una campo eléctrico}
 \end{align*}
+
+Además $\frac{\vec{D}}{\vec{E}}=\epsilon _0(1+\chi )$ si el campo es isotrópico, esto es que los vectores de densidad de campo eléctrico e intensidad estén en la misma dirección.
+
+
 
 \begin{sabias}
 En en el vacío $\chi =0$ porque no hay dipolos y $\epsilon _r=1$. En un material polar al aplicar $\vec{E}$ se polariza, en cambio en una dipolar  la nube aumenta al tener las mismas condiciones. 
@@ -542,8 +547,10 @@ De $E_0-E_2$: linealidad, de $E_2-E_{c}$ : Ionización (punto antes de la disrup
 
 
 \begin{exercise}[Caucho]
-Imagine que estire un caucho...
+Imagine que estire un caucho, algunas moléculas se van estirando hasta que en algún momento su se aplican más fuerza este se va a romper. Algo curioso es que cuando se deja de estirar queda en algunas ocasiones deformado de por vida.
 \end{exercise}
+
+Por ello, hay que tener cuidado con las $\vec{E}$ que se le aplican a un material porque al llevar a los extremos se corre con el peligro de no poder mantener las características iniciales.
 
 \begin{figure}[H]
 \centering
@@ -561,17 +568,77 @@ Imagine que estire un caucho...
 \end{figure}
 \vspace{0.2cm}
 
+\begin{question}
+¿Cuál es la diferencia conceptual entre ionización y rigidez dieléctrica?\\
+La rigidez dieléctrica es el máximo $\vec{E}$ en el cual el material pierde su capacidad de aislante y pasa a ser conductor. Por otra parte, la Ionización...
+\end{question}
+
+\section{Cálculo de trabajo}
+
+\textcolor{blue}{Anexar presentaciones y hojas 2020-06-08 s1 y s2}
+\begin{itemize}
+\item La energía en una linea de transmisión está en todo el espacio, no solo en el conductor.
+\item $\frac{ \vec{D}}{ \vec{E}}=\epsilon _m$ caracteriza el medio.
+\item $\frac{\Delta W_T}{\Delta _{vol}}$ se denomina densidad volumétrica de energía y expresa la cantidad de de energía que se puede almacenar por unidad de volumen a partir de un $\vec{E}$ aplicado.
+\item $\epsilon_m=\frac{ \vec{D}}{\vec{E}}$ La capacidad de un material para generar flujo de intensidad por unidad de área en función de una intensidad aplicada. Note que las unidades son $\left[ \frac{F}{m} \right]=\left[ \frac{c/m^2}{\text{ \textcolor{red}{$v/m$}} }\right]$ el término en rojo significa que que es acción a distancia. 
+\end{itemize}
+
+La densidad volumétrica de energía tiene la similitud con la carga energía de un capacitor:
+\begin{equation}
+dw=vdq \Rightarrow W=\int Vdq \Rightarrow \int \frac{q}{C} dq \Rightarrow \frac{q^2}{2C}=\frac{cv^2}{2}
+\end{equation}
+
+\begin{itemize}
+\item Similitud entre dividir y oponerse.
+\item Similitud entre el producto punto y la capacidad para almacenar energía.
+\end{itemize}
+
+\begin{question}
+¿Qué técnica propone para protegernos del campo eléctrico?\\
+\begin{itemize}
+\item Distanciamiento
+\item Hacer que las concentraciones disminuyan
+\end{itemize}
+\end{question}
+
+\begin{question}
+¿Qué significa para usted 100 $\frac{v}{m}$?\\
+La $\vec{E}$ de la atmósfera ronda entre 100-150 $v/m$. En momentos anteriores a una tormenta, este valor pude ser 10 o 100 veces mayor. 
+\end{question}
+
+\begin{question}
+¿Cuál es la intensidad de campo eléctrico en la toma de la casa?\\
+Si suponemos que hay 1cm de distancia entre la fase y el neutro, se pude decir que la intensidad de campo eléctrico es $\frac{120 Vrms}{1cm}$. Esa intensidad dada en $\frac{12000 Vrms}{m}$ estaría correcta pero usted no va a observar una distancia de 1m de la fase al neutro. Otra manera incorrecta de dar ciertas magnitudes es la potencia de un rayo en $KVh$ porque el rayo nunca va a durar una hora, este solo se presenta en cuestión de milisegundos. Los promedios tienden a perder parte de la información, por ejemplo si Esteban y Sebastian se están en una casa y algunos de ellos se come los diez sándwiches que habían, alguien puede decir que en promedio se comieron 5 lo que es verdad según el significado de promedio, pero no se acerca a la realidad.
+\end{question}
+
+
+\begin{sabias}
+En en ecuador el 99\% de las tormentas son con lluvia. En cambio, cerca a los polos suceden tormentas.
+\end{sabias}
+
+ \begin{question}
+ ¿Qué le pasó al transbordador para que no pudiera despegar?\\
+ Cuenta con dispositivos que medían constantemente la $\vec{E}$ y no cumplió con las especificaciones adecuadas. Además, debido a que el tanque tiene Nitrógeno y Oxígeno era peligrosa alguna explosión.
+ \end{question}
+
+ \begin{question}
+ ¿Puedo almacenar la energía de un rayo?\\
+ Un rayo tiene mucha potencia, pero poca energía.
+ \end{question}
+
+
+ \begin{question}
+ ¿Por qué $\epsilon _r$ del aire es similar a la del vacío?\\
+ Porque las moléculas no se polarizan, el campo eléctrico en el aire hace la que las moléculas se muevan a una velocidad impresionante pero no logra la polarización y por lo tanto $ \chi \approx 0$
+ \end{question}
+
+
+ \begin{exercise}
+ ¿Para que me sirven una densidad de energía de $4.225 \mu \frac{J}{m^3}$ ?\\
+ \end{exercise}
+
 
 \bibliography{myBooks}
 \bibliographystyle{unsrt}
 
 \end{document}
-
-% Some examples to inset figures
-
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=1\linewidth]{figures/z_propertiesUnilateral1.png}
-%\caption{z-properties unilateral.}
-%\label{z_propertiesUnilateral1}
-%\end{figure}
